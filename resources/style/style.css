@@ -33,10 +33,10 @@ header {
   box-sizing: border-box;
   background-color: black;
 }
-
-header a {
+a {
   text-decoration: none;
 }
+
 
 .nav-section {
   display: flex;
@@ -142,7 +142,10 @@ input {
 }
 
 .landing-text {
-  padding: 3%;
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-top: 3%;
+  padding-bottom: 0%;
   font-size: 20px;
   font-family: "inter-light";
   color: black;
@@ -152,7 +155,7 @@ input {
   font-size: 36px;
   font-family: "inter-semibold";
   color: black;
-  margin-left: 8%;
+  margin: 0%;
   -webkit-text-decoration: underline black;
           text-decoration: underline black;
 }
@@ -161,23 +164,16 @@ input {
   font-family: "inter-semibold";
   color: black;
   margin-top: 0%;
-  margin-right: 8%;
-  margin-left: 8%;
 }
 .landing-text h3 {
   font-size: 24px;
   font-family: "inter-light";
   color: #777777;
-  margin-left: 8%;
-  margin-bottom: 0%;
-  margin-top: 0%;
+  margin: 0%;
 }
 
 .landing-text p {
-  margin-right: 8%;
-  margin-left: 8%;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin: 0%;
 }
 
 .landing-image-flex {
@@ -185,9 +181,7 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2%;
-  margin-right: 8%;
-  margin-left: 8%;
+  padding: 2%;
   -o-object-fit: contain;
      object-fit: contain;
   padding-bottom: 3%;
@@ -202,6 +196,7 @@ input {
 }
 .landing-image-flex a {
   text-decoration: none;
+  padding: 1em;
 }
 
 .arrow-flex {
@@ -403,7 +398,7 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .button:hover {
@@ -419,7 +414,7 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5%;
+  border-radius: 5px;
   margin: 0%;
 }
 #submit-button h5 {
@@ -473,6 +468,7 @@ input {
   color: black;
 }
 .food-info h5 {
+  justify-content: center;
   display: flex;
   font-size: 24px;
   font-family: "inter-light";
@@ -493,7 +489,7 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5%;
+  border-radius: 5px;
   font-size: 20px;
 }
 
@@ -542,8 +538,34 @@ input {
 .error-page-heading {
   margin: 3%;
 }
-
+@media only screen and (max-width: 320px) {
+  #landingimage .tagline {
+    bottom: 20%;
+  }
+  #landingimage .tagline h2 {
+  font-size: 45px;
+  }
+  .raglan-image img {
+    height: 10em;
+    width: 12em;
+  }
+  }
 @media only screen and (max-width: 425px) {
+  #landingimage .tagline {
+    bottom: 20%;
+  }
+  .landing-text h1 {
+    font-size: 22px;
+  }
+  .landing-text h4 {
+    font-size: 20px;
+  }
+  .landing-text h3 {
+    font-size: 20px;
+  }
+  .landing-text p {
+    font-size: 16px;
+  }
   #error-page h1 {
     font-size: 20px;
   }
@@ -575,29 +597,47 @@ input {
   #submit-button {
     margin-top: 3%;
   }
-  .raglan-image {
-    margin-top: 30%;
-  }
   .raglan-image img {
     height: 15em;
-    width: 20em;
+    width: 18em;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .food-section-flex {
     gap: 2em;
+    margin-top: 5em;
+    align-items: center;
   }
   #option-page {
     margin-bottom: 0%;
+    margin-top: 8em;
   }
+  .food-info h1 {
+    font-size: 26px;
+  }
+  .food-info h3 {
+    font-size: 18px;
+  }
+  .food-info p {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 16px;
+  }
+  .card h3 {
+    font-size: 18px;
+  }
+ .food-info h3 {
+  font-size: 18px;
+ }
 }
+
 @media only screen and (max-width: 800px) {
   .landing-image-flex {
     flex-wrap: wrap;
     justify-content: center;
   }
   #option-page h1 {
-    margin-top: 10%;
     font-size: 20px;
   }
   .option-info-box {
@@ -613,43 +653,34 @@ input {
        object-fit: contain;
   }
 }
+
 @media only screen and (max-width: 991px) {
   #option-page h1 {
-    margin-top: 6em;
     font-size: 10px;
   }
   #footer {
     flex-direction: column;
-    padding: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
   }
-}
-@media only screen and (max-width: 991px) and (max-width: 991px) {
   .nav-section {
     justify-content: space-between;
   }
-}
-@media only screen and (max-width: 991px) {
   #to-reveal {
     padding: 5%;
   }
-}
-@media only screen and (max-width: 991px) {
   header .nav-section > a {
     display: none;
   }
-}
-@media only screen and (max-width: 991px) {
   #mobile-nav-open {
     display: block;
   }
-}
-@media only screen and (max-width: 991px) {
+
   .mobile-nav-drop {
     display: flex;
     flex-direction: column;
   }
-}
-@media only screen and (max-width: 991px) {
   .mobile-nav-drop a {
     position: relative;
     padding: 2%;
@@ -657,19 +688,27 @@ input {
     font-family: "inter-semibold";
     color: white;
   }
-}
-@media only screen and (max-width: 991px) {
   #option-page h1 {
-    margin-top: 5em;
     font-size: 20px;
   }
-}
-@media only screen and (max-width: 991px) {
   #footer hr {
     display: block;
     border-color: white;
   }
+  .twitter {
+    gap: 1%;
+  }
+  .facebook {
+    gap: 1%;
+  }
+  .instagram {
+    gap: 1%;
+  }
+  .youtube {
+    gap: 1%;
+  }
 }
+
 @media only screen and (max-width: 1024) {
   .landing-image-flex {
     justify-content: space-evenly;
