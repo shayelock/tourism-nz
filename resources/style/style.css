@@ -1,19 +1,4 @@
-@font-face {
-  font-family: "inter-semibold";
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
-}
-@font-face {
-  font-family: "inter-regular";
-  src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-}
-@font-face {
-  font-family: "inter-light";
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-}
-@font-face {
-  font-family: "inter-light";
-  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
-}
+
 @font-face {
   font-family: "pure";
   src: url("./PurePakati-Notch.otf");
@@ -33,10 +18,10 @@ header {
   box-sizing: border-box;
   background-color: black;
 }
-a {
+
+header a {
   text-decoration: none;
 }
-
 
 .nav-section {
   display: flex;
@@ -49,7 +34,7 @@ a {
   font-size: 16px;
   font-family: "inter-semibold";
   color: white;
-  font-family: "inter-semibold";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-section > a {
@@ -142,38 +127,40 @@ input {
 }
 
 .landing-text {
-  padding-right: 8%;
-  padding-left: 8%;
-  padding-top: 3%;
-  padding-bottom: 0%;
-  font-size: 20px;
-  font-family: "inter-light";
-  color: black;
+  padding: 3%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .landing-text h4 {
-  font-size: 36px;
-  font-family: "inter-semibold";
-  color: black;
-  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 8%;
   -webkit-text-decoration: underline black;
           text-decoration: underline black;
+  color: black;
+  font-size: 24px;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .landing-text h1 {
-  font-size: 36px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 0%;
+  margin-right: 8%;
+  margin-left: 8%;
+  font-size: 26px;
 }
 .landing-text h3 {
-  font-size: 24px;
-  font-family: "inter-light";
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 8%;
+  margin-bottom: 0%;
+  margin-top: 0%;
   color: #777777;
-  margin: 0%;
 }
 
 .landing-text p {
-  margin: 0%;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .landing-image-flex {
@@ -181,22 +168,24 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2%;
+  gap: 2%;
+  margin-right: 8%;
+  margin-left: 8%;
   -o-object-fit: contain;
      object-fit: contain;
   padding-bottom: 3%;
 }
 .landing-image-flex h1 {
   text-decoration: none;
-  font-size: 20px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 2%;
   margin-bottom: 0%;
+  font-size: 18px;
 }
 .landing-image-flex a {
   text-decoration: none;
-  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 .arrow-flex {
@@ -217,19 +206,18 @@ input {
   gap: 10%;
   background-color: black;
   padding: 1%;
+  padding-bottom: 3%;
 }
 #footer h5 {
-  font-size: 24px;
-  font-family: "inter-light";
-  color: white;
-  font-family: "inter-semibold";
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 2%;
+  color: white;
+  font-size: 18px;
 }
 #footer p {
-  font-size: 16px;
-  font-family: "inter-light";
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
+  color: white;
 }
 #footer hr {
   display: none;
@@ -238,7 +226,7 @@ input {
 .twitter {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+  gap: 2%;
 }
 .twitter img {
   width: auto;
@@ -248,7 +236,7 @@ input {
 .instagram {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+  gap: 2%;
 }
 .instagram img {
   width: auto;
@@ -258,7 +246,7 @@ input {
 .youtube {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+  gap: 2%;
 }
 .youtube img {
   width: auto;
@@ -268,7 +256,7 @@ input {
 .facebook {
   display: flex;
   flex-direction: row;
-  gap: 5%;
+  gap: 2%;
 }
 .facebook img {
   width: auto;
@@ -278,24 +266,28 @@ input {
 #option-page {
   background-color: white;
   margin-top: 8%;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
   margin-right: 2%;
   margin-left: 2%;
 }
 #option-page h1 {
-  font-size: 36px;
-  font-family: "inter-semibold";
-  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 3%;
   margin-top: 10%;
+  margin-bottom: 0%;
+  font-size: 26x;
+  color: #777777;
 }
-
+.food-info a {
+  text-decoration: none;
+}
 .option-card-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5%;
   flex-wrap: wrap;
+  padding: 3%;
 }
 
 .card-icon-flex {
@@ -329,21 +321,16 @@ input {
 }
 .card p {
   margin: 0%;
-  font-size: 20px;
-  font-family: "inter-light";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .card h3 {
   margin: 0%;
-  font-size: 20px;
-  font-family: "inter-semibold";
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
 .card h5 {
   margin-top: 5%;
-  font-size: 20px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .card a {
   text-decoration: underline;
@@ -370,23 +357,19 @@ input {
   margin-left: 8%;
 }
 #error-page h1 {
-  font-size: 36px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
   padding-top: 10%;
 }
 #error-page h2 {
-  font-size: 20px;
-  font-family: "inter-light";
-  color: #777777;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding-bottom: 4%;
+  font-size: 16px;
+  color: #777777;
 }
 #error-page h5 {
-  font-size: 20px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10%;
 }
 
@@ -398,7 +381,7 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 0.5em;
 }
 
 .button:hover {
@@ -414,13 +397,11 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 0.5em;
   margin: 0%;
 }
 #submit-button h5 {
-  font-size: 24px;
-  font-family: "inter-light";
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .submit-btn {
@@ -448,31 +429,21 @@ input {
   margin: 0%;
   padding-bottom: 2%;
   gap: 3%;
-  font-size: 36px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .food-info p {
   margin: 0%;
-  font-size: 20px;
-  font-family: "inter-light";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .food-info h3 {
   margin-left: 0%;
   margin-top: 0%;
   margin-bottom: 0%;
   padding-top: 1%;
-  font-size: 20px;
-  font-family: "inter-semibold";
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .food-info h5 {
-  justify-content: center;
-  display: flex;
-  font-size: 24px;
-  font-family: "inter-light";
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
 }
 .food-info img {
@@ -489,7 +460,7 @@ input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 0.5em;
   font-size: 20px;
 }
 
@@ -538,34 +509,8 @@ input {
 .error-page-heading {
   margin: 3%;
 }
-@media only screen and (max-width: 320px) {
-  #landingimage .tagline {
-    bottom: 20%;
-  }
-  #landingimage .tagline h2 {
-  font-size: 45px;
-  }
-  .raglan-image img {
-    height: 10em;
-    width: 12em;
-  }
-  }
+
 @media only screen and (max-width: 425px) {
-  #landingimage .tagline {
-    bottom: 20%;
-  }
-  .landing-text h1 {
-    font-size: 22px;
-  }
-  .landing-text h4 {
-    font-size: 20px;
-  }
-  .landing-text h3 {
-    font-size: 20px;
-  }
-  .landing-text p {
-    font-size: 16px;
-  }
   #error-page h1 {
     font-size: 20px;
   }
@@ -597,47 +542,29 @@ input {
   #submit-button {
     margin-top: 3%;
   }
+  .raglan-image {
+    margin-top: 30%;
+  }
   .raglan-image img {
     height: 15em;
-    width: 18em;
+    width: 20em;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .food-section-flex {
     gap: 2em;
-    margin-top: 5em;
-    align-items: center;
   }
   #option-page {
     margin-bottom: 0%;
-    margin-top: 8em;
   }
-  .food-info h1 {
-    font-size: 26px;
-  }
-  .food-info h3 {
-    font-size: 18px;
-  }
-  .food-info p {
-    font-size: 16px;
-  }
-  .card p {
-    font-size: 16px;
-  }
-  .card h3 {
-    font-size: 18px;
-  }
- .food-info h3 {
-  font-size: 18px;
- }
 }
-
 @media only screen and (max-width: 800px) {
   .landing-image-flex {
     flex-wrap: wrap;
     justify-content: center;
   }
   #option-page h1 {
+    margin-top: 10%;
     font-size: 20px;
   }
   .option-info-box {
@@ -653,62 +580,62 @@ input {
        object-fit: contain;
   }
 }
-
 @media only screen and (max-width: 991px) {
   #option-page h1 {
+    margin-top: 6em;
     font-size: 10px;
   }
   #footer {
     flex-direction: column;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 5%;
+    padding: 10%;
   }
+}
+@media only screen and (max-width: 991px) and (max-width: 991px) {
   .nav-section {
     justify-content: space-between;
   }
+}
+@media only screen and (max-width: 991px) {
   #to-reveal {
     padding: 5%;
   }
+}
+@media only screen and (max-width: 991px) {
   header .nav-section > a {
     display: none;
   }
+}
+@media only screen and (max-width: 991px) {
   #mobile-nav-open {
     display: block;
   }
-
+}
+@media only screen and (max-width: 991px) {
   .mobile-nav-drop {
     display: flex;
     flex-direction: column;
   }
+}
+@media only screen and (max-width: 991px) {
   .mobile-nav-drop a {
     position: relative;
     padding: 2%;
-    font-size: 20px;
-    font-family: "inter-semibold";
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
   }
+}
+@media only screen and (max-width: 991px) {
   #option-page h1 {
+    margin-top: 5em;
     font-size: 20px;
   }
+}
+@media only screen and (max-width: 991px) {
   #footer hr {
     display: block;
     border-color: white;
   }
-  .twitter {
-    gap: 1%;
-  }
-  .facebook {
-    gap: 1%;
-  }
-  .instagram {
-    gap: 1%;
-  }
-  .youtube {
-    gap: 1%;
-  }
 }
-
 @media only screen and (max-width: 1024) {
   .landing-image-flex {
     justify-content: space-evenly;
@@ -717,8 +644,7 @@ input {
     flex-direction: column;
   }
   #option-page h1 {
-    font-size: 36px;
-    font-family: "inter-semibold";
+    font-family: Arial, Helvetica, sans-serif;
     color: #777777;
   }
 }/*# sourceMappingURL=style.css.map */

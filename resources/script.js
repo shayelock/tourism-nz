@@ -11,6 +11,9 @@ let submit_btn = document.getElementById('submit-button');
 
 console.log(submit_btn);
 
+
+
+
 submit_btn.onclick = function(){
     console.log('I have been clicked')
     let first_date = document.getElementById('first-date-input').value;

@@ -1,102 +1,17 @@
 
-@font-face {
-    font-family:"inter-semibold";
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-}
-@font-face {
-    font-family: "inter-regular";
-    src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-}
-@font-face {
-    font-family: "inter-light";
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-}
-@font-face {
-    font-family: "inter-light";
-    src:  url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-}
+
 @font-face {
     font-family:"pure";
     src: url('./PurePakati-Notch.otf');
 }
 
-
-@mixin font-h1 {
-    font-size: 36px;
-    font-family: 'inter-semibold';
-    color: black;
-}
-@mixin font-h1-grey {
-    font-size: 36px;
-    font-family: 'inter-semibold';
-    color: #777777;
-}
 @mixin font-h2 {
     font-size: 55px;
     font-family: 'pure';
     color: white;
 }
 
-@mixin font-nav {
-    font-size: 16px;
-    font-family: 'inter-semibold';
-    color: white;
-}
 
-@mixin font-footer {
-    font-size: 16px;
-    font-family: 'inter-regular';
-    color: white;
-}
-
-@mixin font-p {
-    font-size: 20px;
-    font-family: 'inter-light';
-    color: black;
-}
-
-@mixin font-p-white {
-    font-size: 16px;
-    font-family: 'inter-light';
-    color: white;
-}
-
-@mixin font-h5 {
-    font-size: 24px;
-    font-family: 'inter-light';
-    color: white;
-}
-@mixin font-h5-black {
-    font-size: 24px;
-    font-family: 'inter-light';
-    color: black;
-}
-@mixin font-h3 {
-    font-size: 20px;
-    font-family: 'inter-semibold';
-    color: black;
-}
-@mixin font-h3-white {
-    font-size: 20px;
-    font-family: 'inter-semibold';
-    color: white;
-}
-@mixin font-h2-grey {
-    font-size: 20px;
-    font-family: 'inter-light';
-    color: #777777;
-}
-
-@mixin font-h3-black {
-    font-size: 20px;
-    font-family: 'inter-semibold';
-    color: black;
-}
-@mixin font-light-grey {
-    font-size: 24px;
-    font-family: 'inter-light';
-    color: #777777;
-}
 
 body {
     background-color: white;
@@ -125,8 +40,7 @@ header {
     align-items: center;
     gap: 8%;
     a {
-    @include  font-nav();
-    font-family: 'inter-semibold';
+    font-family: Arial, Helvetica, sans-serif;
     }
   }
 
@@ -213,25 +127,30 @@ input {
 }
 .landing-text{
     padding: 3%;
-    @include font-p();
+    font-family: Arial, Helvetica, sans-serif;
 }
 .landing-text {
 h4 {
-    @include font-h1();
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 8%;
     text-decoration: underline black;
+    color: black;
+    font-size: 24px;
 }
  h1{
-    @include font-h1();
+   font-family: Arial, Helvetica, sans-serif;
     margin-top: 0%;
     margin-right: 8%;
     margin-left: 8%;
+    font-size: 26px;
 }
 h3 {
-    @include font-light-grey();
+    font-family: Arial, Helvetica, sans-serif;
     margin-left: 8%;
     margin-bottom: 0%;
     margin-top: 0%;
+    color: #777777;
+    font-size: 22px;
 }
 }
 
@@ -253,12 +172,15 @@ h3 {
     padding-bottom:  3%;
     h1{
         text-decoration: none;
-        @include font-h3();
+       font-family: Arial, Helvetica, sans-serif;
         margin-top: 2%;
         margin-bottom: 0%;
+        font-size: 12px;
     }
     a {
         text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
     }
 }
 .arrow-flex {
@@ -278,18 +200,15 @@ h3 {
     gap: 10%;
     background-color: black;
     padding: 1%;
-    // position: absolute;
-    // right: 0px;
-    // left: 0px;
-    // bottom: 0px;
+
     h5 {
-        @include font-h5();
-        font-family: 'inter-semibold';
+        font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 2%;
     }
     p {
-       @include font-p-white();
+      font-family: Arial, Helvetica, sans-serif;
        margin: 0%;
+       color: white;
     }
   hr {
     display: none;
@@ -298,7 +217,7 @@ h3 {
 .twitter {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
     img {
         width: auto;
         height: 100%;
@@ -307,7 +226,7 @@ h3 {
 .instagram {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
     img {
         width: auto;
         height: 100%;
@@ -316,7 +235,7 @@ h3 {
 .youtube {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
     img {
         width: auto;
         height: 100%;
@@ -325,7 +244,7 @@ h3 {
 .facebook {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
     img {
         width: auto;
         height: 100%;
@@ -340,7 +259,7 @@ h3 {
     margin-right: 2%;
     margin-left: 2%;
     h1 {
-        @include font-h1-grey();   
+        font-family: Arial, Helvetica, sans-serif;
         margin-left: 3%;
         margin-top: 10%;
     }
@@ -380,15 +299,15 @@ h3 {
     padding-top: 1%;
     p {
         margin: 0%;
-        @include font-p ();
+        font-family: Arial, Helvetica, sans-serif;
     }
     h3 {
     margin: 0%;
-        @include font-h3-black();
+        font-family: Arial, Helvetica, sans-serif;
     }
    h5 {
    margin-top: 5%;
-   @include font-h3-black();
+   font-family: Arial, Helvetica, sans-serif;
    }
    a {
     text-decoration: underline;
@@ -410,17 +329,17 @@ h3 {
     margin-top: 8em;
     margin-left: 8%;
     h1 {
-        @include font-h1();
+        font-family: Arial, Helvetica, sans-serif;
         margin: 0%;
         padding-top: 10%;
     }
     h2 {
-        @include font-h2-grey();
+   font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         padding-bottom:  4%;
     }
     h5 {
-        @include font-h3-black();
+        font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 10%;
         }
    
@@ -452,7 +371,7 @@ h3 {
    border-radius: 5%;
    margin: 0%;
    h5 {
-    @include font-h5();
+    font-family: Arial, Helvetica, sans-serif;
 }
   }
   .submit-btn {
@@ -481,22 +400,22 @@ h3 {
         margin: 0%;
         padding-bottom: 2%;
         gap: 3%;
-        @include font-h1();
+        font-family: Arial, Helvetica, sans-serif;
     }
     p {
         margin: 0%;
-        @include font-p();
+      font-family: Arial, Helvetica, sans-serif;
     }
     h3  {
         margin-left: 0%;
         margin-top: 0%;
         margin-bottom: 0%;
         padding-top: 1%;
-        @include font-h3-black();
+        font-family: Arial, Helvetica, sans-serif;
     }
     h5 {
         display: flex;
-        @include font-h5();
+        font-family: Arial, Helvetica, sans-serif;
 margin: 0%;
     }
     img {
@@ -512,7 +431,7 @@ margin: 0%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-   border-radius: 5%;
+   border-radius: 5em;
    font-size: 20px;
   }
   .return-button:hover {
@@ -670,7 +589,8 @@ justify-content: space-between;
   .mobile-nav-drop a {
   position: relative;
   padding: 2%;
-  @include  font-h3-white();
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
   }
   #option-page {
     h1 {
@@ -695,6 +615,7 @@ justify-content: space-between;
 }
 
 #option-page h1{
-        @include font-h1-grey();   
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
 }
 }
